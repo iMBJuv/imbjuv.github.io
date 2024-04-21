@@ -1,0 +1,102 @@
+/*================*/
+/* Edits On Header */
+/*================*/
+
+.product-details {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  align-items: center;
+  text-align: center;
+}
+
+header {
+  background-color: var(--bodyFont);
+}
+
+header .sign-in,
+header .register {
+  border: 1px solid white;
+  padding: 5px 15px;
+  border-radius: 12px;
+  color: white;
+}
+
+header .sign-in:hover,
+header .register:hover,
+header .links .cart:hover {
+  background-color: white;
+  color: var(--darkBlue);
+}
+
+header .links .cart {
+  background-color: var(--bodyFont);
+  border: 1px solid white;
+  color: white;
+}
+
+header .logo,
+header .logo .desc-word,
+header .logo .web-logo {
+  color: white;
+}
+
+/* ============================= */
+
+.prod-det {
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  margin-inline: auto;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.228);
+  background-color: white;
+}
+
+.prod-det img {
+  width: 250px;
+}
+
+.prod-info {
+  padding: 15px;
+}
+
+.prod-det .head-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.prod-det .head-title .the-price {
+  color: brown;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.prod-det .prod-desc {
+  text-align: left;
+  margin-bottom: 20px;
+  text-wrap: balance;
+}
+
+.button-cart {
+  display: flex;
+}
+
+.prod-det button {
+  background-color: var(--darkBlue);
+  color: white;
+  padding: 7px 12px;
+  align-items: start;
+}
+
+@media (width < 800px) {
+  .prod-det {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .prod-det img {
+    width: 300px;
+  }
+}
