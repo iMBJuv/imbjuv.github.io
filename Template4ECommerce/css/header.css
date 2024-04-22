@@ -1,0 +1,94 @@
+/*================*/
+/* Start Header */
+/*================*/
+
+/* right header buttons */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 10%;
+}
+
+header .sign-in {
+  margin-inline: 1rem;
+}
+
+header .sign-in,
+header .register,
+header .links .cart {
+  border: 1px solid var(--bodyFont);
+  padding: 5px 15px;
+  border-radius: 12px;
+}
+
+header .sign-in:hover,
+header .register:hover {
+  background-color: var(--bodyFont);
+  color: var(--darkBlue);
+}
+
+header .links i {
+  margin-right: 3px;
+}
+
+header .links .cart {
+  background-color: var(--bodyFont);
+  color: var(--darkBlue);
+  font-size: 0.9rem;
+  padding: 7px 15px;
+  border-radius: 12px;
+
+  position: relative;
+}
+
+header .links .cart span {
+  position: absolute;
+
+  top: -12px;
+  right: 0px;
+
+  color: white;
+  background-color: var(--darkRed);
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* left header logo */
+
+header .logo {
+  font-size: 15px;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+header .logo:hover {
+  scale: 0.95;
+}
+
+header .logo .desc-word {
+  font-weight: 500;
+  color: #555;
+}
+
+header .logo .web-logo {
+  font-size: 40px;
+  color: #3d4a59;
+}
+
+@media (width < 600px) {
+  header .logo {
+    display: none;
+  }
+
+  header .links {
+    margin: auto;
+  }
+}
+
+/* ============================= */

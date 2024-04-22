@@ -1,0 +1,65 @@
+.signin-page {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  align-items: center;
+  text-align: center;
+}
+
+/*================*/
+/* Edits On Header */
+/*================*/
+
+header {
+  background-color: var(--bodyFont);
+}
+
+header .sign-in,
+header .register {
+  border: 1px solid white;
+  padding: 5px 15px;
+  border-radius: 12px;
+  color: white;
+}
+
+header .sign-in:hover,
+header .register:hover,
+header .links .cart:hover {
+  background-color: white;
+  color: var(--darkBlue);
+}
+
+header .links .cart {
+  background-color: var(--bodyFont);
+  border: 1px solid white;
+  color: white;
+}
+
+header .logo,
+header .logo .desc-word,
+header .logo .web-logo {
+  color: white;
+}
+
+/* Register Form */
+
+.register-form {
+  max-width: 600px;
+  align-items: center;
+}
+
+.register-form h1 {
+  margin-bottom: 50px;
+}
+
+.register-form form label {
+  font-weight: 600;
+  display: flex;
+  align-items: start;
+  margin-left: 20px;
+}
+
+.register-form form .sign-btn {
+  background-color: var(--darkBlue);
+  margin-top: 20px;
+}
